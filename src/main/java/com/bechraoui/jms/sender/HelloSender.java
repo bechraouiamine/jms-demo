@@ -42,7 +42,7 @@ public class HelloSender {
         System.out.println("I'ma sending a message");
 
         HelloWorldMessage message = HelloWorldMessage.builder().
-                id(UUID.randomUUID()).message("Hello World !!!").build();
+                id(UUID.randomUUID()).message("Hello World Amine !!!").build();
 
         Message msg = jmsTemplate.sendAndReceive(JmsConfig.MY_SEND_RCV_QUEUE, new MessageCreator() {
             @Override
